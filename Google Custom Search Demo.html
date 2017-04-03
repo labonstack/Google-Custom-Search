@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Google Custom Search Demo</title>
+</head>
+<body>
+<h1><center>Google Custom Search Demo By LabonStack.com</center></h1>
+<br/>
+
+<form class="dce-search-box">
+
+<gcse:searchbox>
+	<input class="gsc-input" type="text" />
+</gcse:searchbox>
+
+</form>
+
+<script>
+  (function() {
+    var cx = '010809261538882902953:iepvwj_rwsi';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+<!-- Result of search that you want to show after search -->
+<gcse:searchresults></gcse:searchresults>
+
+</body>
+</html>
